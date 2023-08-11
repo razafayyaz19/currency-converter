@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Currency Calculator - Raza Fayyaz</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-sub">
+				<div >
+					<div class="currency-difference-from" id="currency-difference-from"></div>
+					<div class="currency-difference-to"><b id="currency-difference-to"></b></div>
+					<div class="margin date-conversion" id="currency-date"></div>
+				</div>
+				<div >
+					<form >
+						<div class="row margin">
+							<input min="0" type="number" class="currency-ammount" value="" id="from-amount" />
+							<div class="type-picker-section">
+								<div class="divider"></div>
+								<select class="type-picker" id="from-currency">
+
+								</select>
+								<span class="current-currency" id="from-title" aria-hidden="true"></span>
+							</div>
+						</div>
+						<div class="row">
+							<input min="0" type="number" class="currency-ammount" value="" id="to-amount" />
+							<div class="type-picker-section">
+								<div class="divider"></div>
+								<select class="type-picker" id="to-currency">
+
+								</select>
+								<span class="current-currency" id="to-title" aria-hidden="true"></span>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="error-messages" id="error-messages">
+
+				</div>
+			</div>
+		</div>
+		<script src="./js/currencies-lookup.js"></script>
+		<script src="./js/vanilla.js"></script>
+	</body>
+</html>
